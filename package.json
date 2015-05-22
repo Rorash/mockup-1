@@ -1,0 +1,17 @@
+{
+  "name": "mockup-one",
+  "version": "0.1.0",
+  "devDependencies": {
+    "browserify": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-for-compass": "latest",
+    "gulp-livereload": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-server-livereload": "latest",
+    "vinyl-source-stream": "latest",
+    "watchify": "^3.2.1"
+  }
+}
