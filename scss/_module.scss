@@ -1,0 +1,489 @@
+@import "compass/typography/lists/horizontal-list";
+@import "compass/css3/font-face";
+@import "social/*.png";
+
+@include all-social-sprites;
+
+.row {
+    &:after {
+        content: '';
+        clear: both;
+        height: 0;
+        display: block;
+        visibility: hidden;
+    }
+}
+
+hr.top-dashed {
+    top: 10px;
+}
+
+hr.bottom-dashed {
+    bottom: 10px;
+}
+
+hr.top-dashed, hr.bottom-dashed {
+    margin: 0;
+    border-top: 1px dashed rgba(0, 0, 0, 0.25);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
+    position: absolute;
+    bottom: 10px;
+    background-color: transparent;
+    z-index: 10;
+    width: 100%;
+    height: 0;
+}
+
+.header-inner, .slider-inner, .about-me-inner, .portfolio-inner, .my-blog-inner, .contact-me-inner {
+    background: url(img/grain.png) repeat;
+    padding: 30px 0;
+    .more-posts {
+        text-transform: uppercase;
+        position: relative;
+        @include adjust-font-size-to(14px);
+        font-weight: 700;
+        font-family: "oswald";
+        text-align: center;
+        a {
+            text-decoration: none;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 120%;
+                height: 2px;
+                width: 100%;
+                background: #383A3C;
+                transform: scaleX(0.6);
+                transition: all 0.2s ease;
+            }
+            &:hover:before {
+                transform: scaleX(1);
+            }
+        }
+    }
+}
+
+.header-inner {
+    padding: 0;
+}
+
+.section-title {
+    @include adjust-font-size-to(90px);
+    font-family: "bazar";
+    text-transform: uppercase;
+    color: #393a3a;
+    text-shadow: 1px 2px #FCFAF7, 3px 4px #484A4D;
+    text-align: center;
+}
+
+.separator {
+    text-align: center;
+    line-height: 22px;
+    span {
+        position: relative;
+        @include adjust-font-size-to(22px);
+        font-family: "robotoslab", sans-serif;
+        line-height: 22px;
+        &:before {
+            right: 100%;
+            margin-right: 8px;
+        }
+        &:after {
+            left: 100%;
+            margin-left: 8px;
+        }
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            height: 10px;
+            border-bottom: 2px solid #383A3C;
+            top: 5px;
+            width: 40px;
+        }
+    }
+}
+
+.section-subtitle {
+    font-family: "oswald";
+    @include adjust-font-size-to(16px);
+    text-align: center;
+    text-transform: uppercase;
+    color: #38353e;
+}
+
+#header {
+    font-family: "bazar";
+    background-color: #7ac0c0;
+    .header-inner {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+        height: 130px;
+    }
+    #logo {
+        position: absolute;
+        left: 50%;
+        margin-left: -75px;
+        z-index: 100;
+        top: 5px;
+    }
+    ul.nav {
+        text-align: center;
+        font-family: "bazar";
+        text-transform: uppercase;
+        line-height: 48px;
+        @include horizontal-list;
+        margin: 25px 0;
+        li {
+            width: 20%;
+            padding: 0;
+        }
+        #item-right {
+            margin-right: 10%;
+        }
+        #item-left {
+            margin-left: 10%;
+        }
+        a:link, a:visited, a:hover, a:active {
+            text-decoration: none;
+            color: #f9ebd9;
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+#slider {
+    background-color: #7ac0c0;
+    font-family: "bazar";
+    .banner {
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    .ribbon {
+        @include adjust-font-size-to(22px);
+        color: #4b4e4c;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.8);
+        background: url(img/ribbon.png) no-repeat 50%;
+        height: 62px;
+        text-align: center;
+        margin: 30px 0;
+        line-height: 2.5em;
+    }
+    .welcome {
+        text-transform: uppercase;
+        text-align: center;
+        h2 {
+            @include adjust-font-size-to(32px);
+            color: #f7ebd8;
+        }
+        h3 {
+            @include adjust-font-size-to(26px);
+            color: #f7ebd8;
+        }
+    }
+}
+
+#about-me {
+    background: #e6e1d0;
+    text-align: center;
+    .about-card {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+        .big-ico {
+            position: relative;
+            height: 150px;
+            img {
+                position: absolute;
+                left: 50%;
+                margin-left: -75px;
+                top: 0;
+                transition: all 0.2s ease;
+                &:hover{
+                	top:-5px;
+                }
+            }
+        }
+        h4 {
+            @include adjust-font-size-to(27px);
+            font-family: "bazar";
+            text-transform: uppercase;
+        }
+        .subline {
+            @include adjust-font-size-to(14px);
+            text-transform: uppercase;
+            font-family: "robotoslab";
+            margin-bottom: 10px;
+            line-height: 22px;
+        }
+        hr {
+            border: none;
+            background-color: rgba(56, 58, 60, 0.9);
+            height: 3px;
+            width: 40px;
+            margin: 0 auto 10px auto;
+        }
+        p {
+            font-size: 14px;
+            font-family: "robotoslab";
+            text-align: left;
+            line-height: 27px;
+            strong, b {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+#portfolio {
+    background: #e68966;
+    .portfolio-inner {
+        .filter {
+            @include adjust-font-size-to(16px);
+            .cats {
+                display: inline;
+                margin-left: 10px;
+                li {
+                    position: relative;
+                    font-size: 12px;
+                    font-weight: 700;
+                    padding: 5px 8px 5px 12px;
+                    margin-left: 12px;
+                    margin-right: 6px;
+                    margin-bottom: 4px;
+                    color: #383A3C !important;
+                    background-color: #FCFAF7;
+                    text-decoration: none;
+                    cursor: pointer;
+                    border-bottom-right-radius: 3px;
+                    border-top-right-radius: 3px;
+                    display: inline;
+                    &:before {
+                        content: "";
+                        float: left;
+                        position: absolute;
+                        top: 0;
+                        left: -12px;
+                        width: 0;
+                        height: 0;
+                        border-color: rgba(0, 0, 0, 0) #FCFAF7 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+                        border-style: solid;
+                        border-width: 12px 12px 12px 0;
+                    }
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        top: 11px;
+                        left: 0;
+                        float: left;
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 2px;
+                        background: #959CA3;
+                    }
+                }
+            }
+        }
+    }
+    .portfolio-cards {
+        li {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+            margin-bottom: 20px;
+            a {
+                &:hover {
+                    .icon {
+                        top: -25px;
+                    }
+                }
+                border: 4px solid #FCFAF7;
+                border-radius: 3px;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+                background: #FCFAF7;
+                display: block;
+                text-decoration: none;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                .icon {
+                    display: block;
+                    height: 44px;
+                    width: 44px;
+                    background: #FCFAF7;
+                    position: relative;
+                    top: -20px;
+                    margin: 0 auto;
+                    font-size: 24px;
+                    color: #828c8e;
+                    transition: all 0.2s ease;
+                    border-radius: 50%;
+                }
+                h3 {
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-family: "robotoslab";
+                    @include adjust-font-size-to(12px);
+                    font-weight: 700;
+                    margin-top: -20px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+#my-blog {
+    background-color: #e3e0dd;
+    ul {
+        li.post {
+            margin-bottom: 30px;
+            &:after {
+                content: '';
+                clear: both;
+                display: block;
+            }
+            font-family: "robotoslab";
+            .post-img {
+                float: left;
+                width: 33%;
+                padding: 0 10px;
+                img {
+                    width: 100%;
+                    height: auto;
+                    border: 4px solid #FCFAF7;
+                    border-radius: 4px;
+                    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+                }
+            }
+            .post-info {
+                width: 67%;
+                float: left;
+                .post-title {
+                    text-transform: capitalize;
+                    margin-bottom: 4px;
+                    font-size: 24px;
+                }
+                hr {
+                    border: none;
+                    background-color: rgba(56, 58, 60, 0.9);
+                    height: 2px;
+                    width: 40px;
+                    margin: 0 0 10px 0;
+                }
+                .post-descr p {
+                    line-height: 1.8em;
+                    a {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                }
+                .post-meta {
+                    margin-bottom: 4px;
+                    font-family: "oswald";
+                    @include adjust-font-size-to(10px);
+                    font-weight: 700;
+                    a {
+                        text-decoration: none;
+                    }
+                    .post-resp {
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#contact-me {
+    background-color: #4c5057;
+    .section-title, .section-subtitle, .separator span {
+        color: #f6edd8;
+    }
+    .separator span:before, .separator span:after {
+        border-color: #f6edd8;
+    }
+    .section-title {
+        text-shadow: 1px 2px #484a4d, 3px 4px #d4cebf;
+    }
+    .mail-form {
+        width: 50%;
+        margin: 0 auto;
+        input, textarea {
+            margin-bottom: 10px;
+            @include adjust-font-size-to(14px);
+            font-family: "robotoslab";
+            width: 100%;
+            padding: 8px;
+            border-radius: 3px;
+            border: none;
+            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 1px 0 rgba(0, 0, 0, 0.2);
+        }
+        .humanly {
+            text-align: right;
+            float: right;
+            input {
+                width: 20%;
+            }
+            span {
+                font-family: "robotoslab";
+                @include adjust-font-size-to(14px);
+                color: #f6edd8;
+            }
+        }
+        .send {
+            float: left;
+            width: 30%;
+            display: inline-block;
+            line-height: 1.8;
+            padding: 4px 16px;
+            margin-bottom: 4px;
+            color: #383A3C;
+            cursor: pointer;
+            position:relative;
+            &:hover {
+                top: 2px;
+            }
+        }
+    }
+    .social-icons {
+        text-align: center;
+        h5 {
+            font-family: "bazar";
+            text-transform: uppercase;
+            color: #f6edd8;
+        }
+        hr {
+            border: none;
+            height: 3px;
+            background-color: #f6edd8;
+            width: 40px;
+        }
+        ul {
+            li {
+                display: inline-block;
+                padding: 0 5px;
+                a {
+                    position: relative;
+                    display: block;
+                    top: 0px;
+                    transition: all 0.2s ease;
+                    &:hover {
+                        top: -5px;
+                    }
+                    span {
+                        display: block;
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+}

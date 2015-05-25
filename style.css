@@ -1,0 +1,767 @@
+@charset "UTF-8";
+/* line 5, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "bazar";
+  src: url("fonts/bazar-webfont.eot");
+  src: local("тШ║"), url("fonts/bazar-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/bazar-webfont.woff") format("woff"), url("fonts/bazar-webfont.ttf") format("truetype"), url("fonts/bazar-webfont.svg#bazar") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "oswald";
+  src: url("fonts/oswald-regular-webfont.eot");
+  src: local("тШ║"), url("fonts/oswald-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/oswald-regular-webfont.woff") format("woff"), url("fonts/oswald-regular-webfont.ttf") format("truetype"), url("fonts/oswald-regular-webfont.svg#oswald") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotoslab";
+  src: url("fonts/robotoslab-regular-webfont.eot");
+  src: local("тШ║"), url("fonts/robotoslab-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/robotoslab-regular-webfont.woff") format("woff"), url("fonts/robotoslab-regular-webfont.ttf") format("truetype"), url("fonts/robotoslab-regular-webfont.svg#robotoslab") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotoslab";
+  src: url("robotoslab-bold-webfont.eot");
+  src: local("тШ║"), url("robotoslab-bold-webfont.eot?#iefix") format("embedded-opentype"), url("robotoslab-bold-webfont.woff") format("woff"), url("robotoslab-bold-webfont.ttf") format("truetype"), url("robotoslab-bold-webfont.svg#robotoslab") format("svg");
+  font-weight: 500;
+  font-style: bold;
+}
+/* line 54, scss/_base.scss */
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+/* line 61, scss/_base.scss */
+header, section {
+  position: relative;
+}
+
+/* line 65, scss/_base.scss */
+.row {
+  padding: 0.5em 0;
+}
+
+/* line 68, scss/_base.scss */
+body * {
+  box-sizing: border-box;
+  color: #383a3c;
+}
+
+/* line 73, scss/_base.scss */
+p {
+  font-size: 0.59259em;
+  line-height: 1.375em;
+}
+
+/* line 80, social/*.png */
+.social-sprite, .social-facebook, .social-google, .social-linkedin, .social-pinterest, .social-twitter {
+  background-image: url('/img/social-s940ed7c754.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.social-facebook {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.social-google {
+  background-position: 0 -80px;
+}
+
+/* line 84, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.social-linkedin {
+  background-position: 0 -160px;
+}
+
+/* line 84, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.social-pinterest {
+  background-position: 0 -240px;
+}
+
+/* line 84, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.social-twitter {
+  background-position: 0 -320px;
+}
+
+/* line 8, scss/_module.scss */
+.row:after {
+  content: '';
+  clear: both;
+  height: 0;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 17, scss/_module.scss */
+hr.top-dashed {
+  top: 10px;
+}
+
+/* line 21, scss/_module.scss */
+hr.bottom-dashed {
+  bottom: 10px;
+}
+
+/* line 25, scss/_module.scss */
+hr.top-dashed, hr.bottom-dashed {
+  margin: 0;
+  border-top: 1px dashed rgba(0, 0, 0, 0.25);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
+  position: absolute;
+  bottom: 10px;
+  background-color: transparent;
+  z-index: 10;
+  width: 100%;
+  height: 0;
+}
+
+/* line 37, scss/_module.scss */
+.header-inner, .slider-inner, .about-me-inner, .portfolio-inner, .my-blog-inner, .contact-me-inner {
+  background: url(img/grain.png) repeat;
+  padding: 30px 0;
+}
+/* line 40, scss/_module.scss */
+.header-inner .more-posts, .slider-inner .more-posts, .about-me-inner .more-posts, .portfolio-inner .more-posts, .my-blog-inner .more-posts, .contact-me-inner .more-posts {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 0.51852em;
+  line-height: 1.57143em;
+  font-weight: 700;
+  font-family: "oswald";
+  text-align: center;
+}
+/* line 47, scss/_module.scss */
+.header-inner .more-posts a, .slider-inner .more-posts a, .about-me-inner .more-posts a, .portfolio-inner .more-posts a, .my-blog-inner .more-posts a, .contact-me-inner .more-posts a {
+  text-decoration: none;
+  position: relative;
+}
+/* line 50, scss/_module.scss */
+.header-inner .more-posts a:before, .slider-inner .more-posts a:before, .about-me-inner .more-posts a:before, .portfolio-inner .more-posts a:before, .my-blog-inner .more-posts a:before, .contact-me-inner .more-posts a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 120%;
+  height: 2px;
+  width: 100%;
+  background: #383A3C;
+  -webkit-transform: scaleX(0.6);
+      -ms-transform: scaleX(0.6);
+          transform: scaleX(0.6);
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+/* line 61, scss/_module.scss */
+.header-inner .more-posts a:hover:before, .slider-inner .more-posts a:hover:before, .about-me-inner .more-posts a:hover:before, .portfolio-inner .more-posts a:hover:before, .my-blog-inner .more-posts a:hover:before, .contact-me-inner .more-posts a:hover:before {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+/* line 68, scss/_module.scss */
+.header-inner {
+  padding: 0;
+}
+
+/* line 72, scss/_module.scss */
+.section-title {
+  font-size: 3.33333em;
+  line-height: 1.22222em;
+  font-family: "bazar";
+  text-transform: uppercase;
+  color: #393a3a;
+  text-shadow: 1px 2px #FCFAF7, 3px 4px #484A4D;
+  text-align: center;
+}
+
+/* line 81, scss/_module.scss */
+.separator {
+  text-align: center;
+  line-height: 22px;
+}
+/* line 84, scss/_module.scss */
+.separator span {
+  position: relative;
+  font-size: 0.81481em;
+  line-height: 2em;
+  font-family: "robotoslab", sans-serif;
+  line-height: 22px;
+}
+/* line 89, scss/_module.scss */
+.separator span:before {
+  right: 100%;
+  margin-right: 8px;
+}
+/* line 93, scss/_module.scss */
+.separator span:after {
+  left: 100%;
+  margin-left: 8px;
+}
+/* line 97, scss/_module.scss */
+.separator span:before, .separator span:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  border-bottom: 2px solid #383A3C;
+  top: 5px;
+  width: 40px;
+}
+
+/* line 108, scss/_module.scss */
+.section-subtitle {
+  font-family: "oswald";
+  font-size: 0.59259em;
+  line-height: 1.375em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #38353e;
+}
+
+/* line 116, scss/_module.scss */
+#header {
+  font-family: "bazar";
+  background-color: #7ac0c0;
+}
+/* line 119, scss/_module.scss */
+#header .header-inner {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  height: 130px;
+}
+/* line 124, scss/_module.scss */
+#header #logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  z-index: 100;
+  top: 5px;
+}
+/* line 131, scss/_module.scss */
+#header ul.nav {
+  text-align: center;
+  font-family: "bazar";
+  text-transform: uppercase;
+  line-height: 48px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  margin: 25px 0;
+}
+/* line 62, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#header ul.nav li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 49, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#header ul.nav li:first-child {
+  padding-left: 0;
+}
+/* line 50, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#header ul.nav li:last-child {
+  padding-right: 0;
+}
+/* line 52, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#header ul.nav li.last {
+  padding-right: 0;
+}
+/* line 138, scss/_module.scss */
+#header ul.nav li {
+  width: 20%;
+  padding: 0;
+}
+/* line 142, scss/_module.scss */
+#header ul.nav #item-right {
+  margin-right: 10%;
+}
+/* line 145, scss/_module.scss */
+#header ul.nav #item-left {
+  margin-left: 10%;
+}
+/* line 148, scss/_module.scss */
+#header ul.nav a:link, #header ul.nav a:visited, #header ul.nav a:hover, #header ul.nav a:active {
+  text-decoration: none;
+  color: #f9ebd9;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* line 156, scss/_module.scss */
+#slider {
+  background-color: #7ac0c0;
+  font-family: "bazar";
+}
+/* line 160, scss/_module.scss */
+#slider .banner img {
+  margin: 0 auto;
+  display: block;
+}
+/* line 165, scss/_module.scss */
+#slider .ribbon {
+  font-size: 0.81481em;
+  line-height: 2em;
+  color: #4b4e4c;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.8);
+  background: url(img/ribbon.png) no-repeat 50%;
+  height: 62px;
+  text-align: center;
+  margin: 30px 0;
+  line-height: 2.5em;
+}
+/* line 176, scss/_module.scss */
+#slider .welcome {
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 179, scss/_module.scss */
+#slider .welcome h2 {
+  font-size: 1.18519em;
+  line-height: 1.375em;
+  color: #f7ebd8;
+}
+/* line 183, scss/_module.scss */
+#slider .welcome h3 {
+  font-size: 0.96296em;
+  line-height: 1.69231em;
+  color: #f7ebd8;
+}
+
+/* line 190, scss/_module.scss */
+#about-me {
+  background: #e6e1d0;
+  text-align: center;
+}
+/* line 193, scss/_module.scss */
+#about-me .about-card {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+/* line 197, scss/_module.scss */
+#about-me .about-card .big-ico {
+  position: relative;
+  height: 150px;
+}
+/* line 200, scss/_module.scss */
+#about-me .about-card .big-ico img {
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: 0;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+/* line 206, scss/_module.scss */
+#about-me .about-card .big-ico img:hover {
+  top: -5px;
+}
+/* line 211, scss/_module.scss */
+#about-me .about-card h4 {
+  font-size: 1em;
+  line-height: 1.62963em;
+  font-family: "bazar";
+  text-transform: uppercase;
+}
+/* line 216, scss/_module.scss */
+#about-me .about-card .subline {
+  font-size: 0.51852em;
+  line-height: 1.57143em;
+  text-transform: uppercase;
+  font-family: "robotoslab";
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+/* line 223, scss/_module.scss */
+#about-me .about-card hr {
+  border: none;
+  background-color: rgba(56, 58, 60, 0.9);
+  height: 3px;
+  width: 40px;
+  margin: 0 auto 10px auto;
+}
+/* line 230, scss/_module.scss */
+#about-me .about-card p {
+  font-size: 14px;
+  font-family: "robotoslab";
+  text-align: left;
+  line-height: 27px;
+}
+/* line 235, scss/_module.scss */
+#about-me .about-card p strong, #about-me .about-card p b {
+  font-weight: bold;
+}
+
+/* line 242, scss/_module.scss */
+#portfolio {
+  background: #e68966;
+}
+/* line 245, scss/_module.scss */
+#portfolio .portfolio-inner .filter {
+  font-size: 0.59259em;
+  line-height: 1.375em;
+}
+/* line 247, scss/_module.scss */
+#portfolio .portfolio-inner .filter .cats {
+  display: inline;
+  margin-left: 10px;
+}
+/* line 250, scss/_module.scss */
+#portfolio .portfolio-inner .filter .cats li {
+  position: relative;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 8px 5px 12px;
+  margin-left: 12px;
+  margin-right: 6px;
+  margin-bottom: 4px;
+  color: #383A3C !important;
+  background-color: #FCFAF7;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  display: inline;
+}
+/* line 265, scss/_module.scss */
+#portfolio .portfolio-inner .filter .cats li:before {
+  content: "";
+  float: left;
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 0;
+  height: 0;
+  border-color: transparent #FCFAF7 transparent transparent;
+  border-style: solid;
+  border-width: 12px 12px 12px 0;
+}
+/* line 277, scss/_module.scss */
+#portfolio .portfolio-inner .filter .cats li:after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 0;
+  float: left;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: #959CA3;
+}
+/* line 293, scss/_module.scss */
+#portfolio .portfolio-cards li {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+/* line 298, scss/_module.scss */
+#portfolio .portfolio-cards li a {
+  border: 4px solid #FCFAF7;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  background: #FCFAF7;
+  display: block;
+  text-decoration: none;
+}
+/* line 300, scss/_module.scss */
+#portfolio .portfolio-cards li a:hover .icon {
+  top: -25px;
+}
+/* line 310, scss/_module.scss */
+#portfolio .portfolio-cards li a img {
+  width: 100%;
+  height: auto;
+}
+/* line 314, scss/_module.scss */
+#portfolio .portfolio-cards li a .icon {
+  display: block;
+  height: 44px;
+  width: 44px;
+  background: #FCFAF7;
+  position: relative;
+  top: -20px;
+  margin: 0 auto;
+  font-size: 24px;
+  color: #828c8e;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+  border-radius: 50%;
+}
+/* line 327, scss/_module.scss */
+#portfolio .portfolio-cards li a h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "robotoslab";
+  font-size: 0.44444em;
+  line-height: 1.83333em;
+  font-weight: 700;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+/* line 341, scss/_module.scss */
+#my-blog {
+  background-color: #e3e0dd;
+}
+/* line 344, scss/_module.scss */
+#my-blog ul li.post {
+  margin-bottom: 30px;
+  font-family: "robotoslab";
+}
+/* line 346, scss/_module.scss */
+#my-blog ul li.post:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+/* line 352, scss/_module.scss */
+#my-blog ul li.post .post-img {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+/* line 356, scss/_module.scss */
+#my-blog ul li.post .post-img img {
+  width: 100%;
+  height: auto;
+  border: 4px solid #FCFAF7;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+/* line 364, scss/_module.scss */
+#my-blog ul li.post .post-info {
+  width: 67%;
+  float: left;
+}
+/* line 367, scss/_module.scss */
+#my-blog ul li.post .post-info .post-title {
+  text-transform: capitalize;
+  margin-bottom: 4px;
+  font-size: 24px;
+}
+/* line 372, scss/_module.scss */
+#my-blog ul li.post .post-info hr {
+  border: none;
+  background-color: rgba(56, 58, 60, 0.9);
+  height: 2px;
+  width: 40px;
+  margin: 0 0 10px 0;
+}
+/* line 379, scss/_module.scss */
+#my-blog ul li.post .post-info .post-descr p {
+  line-height: 1.8em;
+}
+/* line 381, scss/_module.scss */
+#my-blog ul li.post .post-info .post-descr p a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 387, scss/_module.scss */
+#my-blog ul li.post .post-info .post-meta {
+  margin-bottom: 4px;
+  font-family: "oswald";
+  font-size: 0.37037em;
+  line-height: 2.2em;
+  font-weight: 700;
+}
+/* line 392, scss/_module.scss */
+#my-blog ul li.post .post-info .post-meta a {
+  text-decoration: none;
+}
+/* line 395, scss/_module.scss */
+#my-blog ul li.post .post-info .post-meta .post-resp {
+  float: right;
+}
+
+/* line 404, scss/_module.scss */
+#contact-me {
+  background-color: #4c5057;
+}
+/* line 406, scss/_module.scss */
+#contact-me .section-title, #contact-me .section-subtitle, #contact-me .separator span {
+  color: #f6edd8;
+}
+/* line 409, scss/_module.scss */
+#contact-me .separator span:before, #contact-me .separator span:after {
+  border-color: #f6edd8;
+}
+/* line 412, scss/_module.scss */
+#contact-me .section-title {
+  text-shadow: 1px 2px #484a4d, 3px 4px #d4cebf;
+}
+/* line 415, scss/_module.scss */
+#contact-me .mail-form {
+  width: 50%;
+  margin: 0 auto;
+}
+/* line 418, scss/_module.scss */
+#contact-me .mail-form input, #contact-me .mail-form textarea {
+  margin-bottom: 10px;
+  font-size: 0.51852em;
+  line-height: 1.57143em;
+  font-family: "robotoslab";
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 428, scss/_module.scss */
+#contact-me .mail-form .humanly {
+  text-align: right;
+  float: right;
+}
+/* line 431, scss/_module.scss */
+#contact-me .mail-form .humanly input {
+  width: 20%;
+}
+/* line 434, scss/_module.scss */
+#contact-me .mail-form .humanly span {
+  font-family: "robotoslab";
+  font-size: 0.51852em;
+  line-height: 1.57143em;
+  color: #f6edd8;
+}
+/* line 440, scss/_module.scss */
+#contact-me .mail-form .send {
+  float: left;
+  width: 30%;
+  display: inline-block;
+  line-height: 1.8;
+  padding: 4px 16px;
+  margin-bottom: 4px;
+  color: #383A3C;
+  cursor: pointer;
+  position: relative;
+}
+/* line 450, scss/_module.scss */
+#contact-me .mail-form .send:hover {
+  top: 2px;
+}
+/* line 455, scss/_module.scss */
+#contact-me .social-icons {
+  text-align: center;
+}
+/* line 457, scss/_module.scss */
+#contact-me .social-icons h5 {
+  font-family: "bazar";
+  text-transform: uppercase;
+  color: #f6edd8;
+}
+/* line 462, scss/_module.scss */
+#contact-me .social-icons hr {
+  border: none;
+  height: 3px;
+  background-color: #f6edd8;
+  width: 40px;
+}
+/* line 469, scss/_module.scss */
+#contact-me .social-icons ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+/* line 472, scss/_module.scss */
+#contact-me .social-icons ul li a {
+  position: relative;
+  display: block;
+  top: 0px;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+/* line 477, scss/_module.scss */
+#contact-me .social-icons ul li a:hover {
+  top: -5px;
+}
+/* line 480, scss/_module.scss */
+#contact-me .social-icons ul li a span {
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+
+/* line 1, scss/_state.scss */
+#contact-form-name-error, #contact-form-email-error, #contact-form-message-error, #contact-form-human-error, #contact-form-success {
+  display: none;
+}
+
+/* line 106, ../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 168.75%;
+  line-height: 0.81481em;
+}

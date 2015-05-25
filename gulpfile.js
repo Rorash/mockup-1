@@ -8,6 +8,8 @@ var gulp = require('gulp'),
     compass = require('gulp-for-compass'),
     browserify = require('browserify'),
     source = require('vinyl-source-stream'),
+    rigger = require('gulp-rigger'),
+    htmlmin = require('gulp-html-minifier'),
     sourceFile = './js/main.js',
     destFolder = './js/',
     destFile = 'script.js';
@@ -20,6 +22,7 @@ gulp.task('browserify', function() {
 });
 
 gulp.task('watch', function() {
+  gulp.watch('./html/**/*.html', ['rigger']);
     gulp.watch('./scss/**/*.scss', ['sass']);
     gulp.watch('./js/**/*.js', ['browserify']);
 });
@@ -50,4 +53,13 @@ gulp.task('webserver', function() {
         }));
 });
 
-gulp.task('default', ['sass', 'browserify', 'watch', 'webserver']);
+ 
+gulp.task('rigger', function () {
+    gulp.src('html/index.html')
+        .pipe(rigger())
+        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest('./'));
+});
+
+
+gulp.task('default', ['sass', 'rigger','browserify', 'watch', 'webserver']);
